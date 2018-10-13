@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>登录</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+	<link href="../css/fontawesome.css" rel="stylesheet">
+  </head>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="../index.html"><i class="fab fa-contao"></i>Nhack</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-home"></i> 论坛</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-download"></i> 下载</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-store"></i> 商店</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-comments"></i> 聊天室</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-trophy"></i> 排行榜</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-users"></i> 在线用户</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fas fa-user-shield"></i> 管理人员</a>
+          </li>
+	    </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <a class="btn btn-primary btn-sm" href="../register/index.html" role="button"><i class="fas fa-pencil-alt"></i> 注册</a>
+        </form>
+      </div>
+    </nav>
+  <body class="text-center">
+    <form class="form-signin">
+      <h1 class="h3 font-weight-normal mb-0">登录</h1>
+	  <span class="badge badge-success mb-3"><i class="fas fa-lock"></i> 该页面是安全的</span>
+      <label for="inputUsername" class="sr-only">用户名</label>
+      <input type="username" id="inputUsername" class="form-control" placeholder="用户名" required autofocus>
+      <label for="inputPassword" class="sr-only">密码</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+      <textarea class="form-control mb-2" placeholder="安全码(选填)" rows="3"></textarea>
+      <div class="custom-control custom-checkbox mb-2">
+      <input type="checkbox" class="custom-control-input" id="rememberpassword">
+      <label class="custom-control-label" for="rememberpassword">记住密码</label>
+      </div>
+      <button class="btn btn-lg btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> 登录</button>
+    </form>
+  </body>
+</html>

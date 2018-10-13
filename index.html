@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>安全检查</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="login/css/login.css" rel="stylesheet">
+	<link href="css/fontawesome.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+  <script type="text/javascript">
+  function countDown(secs, surl) {
+      var jumpTo = document.getElementById('jumpTo');
+      jumpTo.innerHTML = secs;
+      if (--secs > 0) {
+         setTimeout("countDown(" + secs + ",'" + surl + "')", 1000);
+      }
+      else {
+      location.href = surl;
+      }
+  }     
+  </script>
+    <form class="form-signin">
+	<i class="fas fa-sync fa-spin fa-4x"></i>
+    <p class="lead"></p>
+    <div><h1>请稍等<span id="jumpTo"></span>秒</h1></div>
+    <script type="text/javascript">
+    countDown(5, 'login/index.html');</script>
+    <p class="lead mb-2">正在进行浏览器安全检查</p>
+    </form>
+  </body>
+</html>
