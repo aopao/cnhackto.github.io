@@ -1,36 +1,28 @@
-<!doctype html>
-<html lang="zh">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-    <title>安全检查</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="login/css/login.css" rel="stylesheet">
-	<link href="css/fontawesome.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-  <script type="text/javascript">
-  function countDown(secs, surl) {
-      var jumpTo = document.getElementById('jumpTo');
-      jumpTo.innerHTML = secs;
-      if (--secs > 0) {
-         setTimeout("countDown(" + secs + ",'" + surl + "')", 1000);
-      }
-      else {
-      location.href = surl;
-      }
-  }     
-  </script>
-    <form class="form-signin">
-	<i class="fas fa-sync fa-spin fa-4x"></i>
-    <p class="lead"></p>
-    <div><h1>请稍等<span id="jumpTo"></span>秒</h1></div>
-    <script type="text/javascript">
-    countDown(5, 'login/index.html');</script>
-    <p class="lead mb-2">正在进行浏览器安全检查</p>
-    </form>
-  </body>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="Trendset Page under construction">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body id="home">
+<div id="Header">
+<div class="wrapper">
+	<h1>距离会考还有</h1>	
+	</div>
+</div>
+<div id="Content" class="wrapper"> 
+<div class="countdown styled"></div> 
+<h2 class="intro">文字</h2>
+<span class="tempBy">文字</a></span>
+</div>
+<div id="overlay"></div>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/Backstretch.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</body>
 </html>
