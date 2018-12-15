@@ -1,5 +1,5 @@
 ﻿$( function() {
-	$.backstretch('https://i.loli.net/2018/11/25/5bfa558c7a87b.jpg');
+	$.backstretch('http://img.desktx.com:8089/d/file/wallpaper/scenery/20161127/b5094fc60cfc28e284a6ce318bd8bbbf.jpg');
 	var endDate = "January 5, 2019 00:00:00";
 	$('.countdown.simple').countdown({ date: endDate });
 	$('.countdown.styled').countdown({
