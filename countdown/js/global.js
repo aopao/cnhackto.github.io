@@ -1,6 +1,6 @@
 ﻿$( function() {
 	$.backstretch('https://i.loli.net/2018/12/16/5c1528d9b7b54.jpg');
-	var endDate = "January 5, 2019 00:00:00";
+	var endDate = "January 9, 2019 00:00:00";
 	$('.countdown.simple').countdown({ date: endDate });
 	$('.countdown.styled').countdown({
 	  date: endDate,
